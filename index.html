@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Atelier Noir — Hair Salon</title>
+  <meta name="description" content="A high-end hair salon. Precision cuts, considered colour, and an hour that belongs to you.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Marble textures, generated with SVG noise so the page needs no image assets -->
+  <svg width="0" height="0" aria-hidden="true" style="position:absolute">
+    <filter id="marble-white" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="turbulence" baseFrequency="0.0025 0.006" numOctaves="6" seed="7"/>
+      <feColorMatrix values="0 0 0 0 0.12  0 0 0 0 0.12  0 0 0 0 0.12  0 0 0 -14 1.6"/>
+      <feComposite in2="SourceGraphic" operator="in"/>
+    </filter>
+    <filter id="marble-black" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="turbulence" baseFrequency="0.0025 0.006" numOctaves="6" seed="3"/>
+      <feColorMatrix values="0 0 0 0 0.92  0 0 0 0 0.9  0 0 0 0 0.86  0 0 0 -14 1.6"/>
+      <feComposite in2="SourceGraphic" operator="in"/>
+    </filter>
+  </svg>
+
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav" data-nav>
+    <a class="brand" href="#top" aria-label="Atelier Noir home">Atelier<span>Noir</span></a>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#transformation">Work</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#visit">Visit</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn--small" href="#book">Book</a>
+  </header>
+
+  <main id="main">
+    <!-- Hero: black marble, vein draws into the monogram on scroll -->
+    <section class="hero dark" id="top">
+      <div class="marble marble--black" aria-hidden="true"></div>
+      <svg class="vein" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <path data-vein d="M-40 120 C 220 180, 340 60, 520 210 S 760 420, 700 470 S 640 560, 720 600 C 820 650, 980 520, 1120 640 S 1380 820, 1500 780"/>
+      </svg>
+      <div class="hero__inner">
+        <p class="eyebrow">Hair Atelier · Est. 2014</p>
+        <h1>Hair, <em>carved</em><br>like marble.</h1>
+        <p class="lede">Precision cuts, considered colour, and an hour that belongs entirely to you.</p>
+        <div class="hero__ctas">
+          <a class="btn" href="#book">Book an appointment</a>
+          <a class="link" href="#services">View services <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+      <div class="monogram" aria-hidden="true">AN</div>
+      <p class="scroll-cue" aria-hidden="true">Scroll</p>
+    </section>
+
+    <!-- Trust bar -->
+    <section class="trust" aria-label="Why clients trust us">
+      <ul>
+        <li><strong>4.9 ★</strong><span>612 Google reviews</span></li>
+        <li><strong>10 yrs</strong><span>on the same corner</span></li>
+        <li><strong>18,000+</strong><span>appointments</span></li>
+        <li class="brands"><span>Kérastase</span><span>Olaplex</span><span>Oribe</span></li>
+      </ul>
+    </section>
+
+    <!-- Services: white marble -->
+    <section class="services light" id="services">
+      <div class="marble marble--white" aria-hidden="true"></div>
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow">The Menu</p>
+          <h2>Signature services</h2>
+        </header>
+        <ol class="menu">
+          <li>
+            <span class="menu__no">01</span>
+            <div><h3>Cut &amp; Finish</h3><p>Consultation, wash, precision cut, blow-dry.</p></div>
+            <span class="menu__meta">60 min</span><span class="menu__price">from $95</span>
+          </li>
+          <li>
+            <span class="menu__no">02</span>
+            <div><h3>Lived-in Colour</h3><p>Hand-painted balayage that grows out softly.</p></div>
+            <span class="menu__meta">180 min</span><span class="menu__price">from $260</span>
+          </li>
+          <li>
+            <span class="menu__no">03</span>
+            <div><h3>Gloss &amp; Ritual</h3><p>Bond repair treatment, gloss toner, scalp massage.</p></div>
+            <span class="menu__meta">45 min</span><span class="menu__price">from $85</span>
+          </li>
+          <li>
+            <span class="menu__no">04</span>
+            <div><h3>Bridal &amp; Occasion</h3><p>Trial and day-of styling, in salon or on location.</p></div>
+            <span class="menu__meta">by consult</span><span class="menu__price">from $180</span>
+          </li>
+        </ol>
+        <a class="link" href="#book">See the full menu <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+
+    <!-- Transformation: before/after slider -->
+    <section class="transformation dark" id="transformation">
+      <div class="wrap split">
+        <div>
+          <p class="eyebrow">The Transformation</p>
+          <h2>Drag to see<br><em>the difference.</em></h2>
+          <p>Brassy box dye to a cool, dimensional blonde across two sessions. Photographed in the salon, no filters.</p>
+          <p class="credit">Colour by Léa · 2 sessions · 5 hrs</p>
+        </div>
+        <div class="ba" data-ba style="--pos:50%">
+          <div class="ba__img ba__before" role="img" aria-label="Before: warm, uneven box-dye colour"><span>Before</span></div>
+          <div class="ba__img ba__after" role="img" aria-label="After: cool dimensional blonde"><span>After</span></div>
+          <div class="ba__handle" aria-hidden="true"></div>
+          <input type="range" min="0" max="100" value="50" aria-label="Compare before and after">
+        </div>
+      </div>
+    </section>
+
+    <!-- The space -->
+    <section class="space light">
+      <div class="wrap space__grid">
+        <figure class="tile tile--tall"><div class="marble marble--white"></div><figcaption>The colour bar</figcaption></figure>
+        <div class="space__copy">
+          <p class="eyebrow">The Space</p>
+          <h2>Six chairs.<br>No rush.</h2>
+          <p>Black and white Carrara, soft light and a single appointment per stylist at a time. Coffee, tea or something stronger while your colour develops.</p>
+        </div>
+        <figure class="tile"><div class="marble marble--black"></div><figcaption>Wash lounge</figcaption></figure>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section class="team light" id="team">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow">The Team</p>
+          <h2>Meet your stylist</h2>
+        </header>
+        <ul class="people">
+          <li><div class="portrait" aria-hidden="true">S</div><h3>Sofia Marin</h3><p>Creative Director · Cuts</p><a class="link" href="#book">Book with Sofia →</a></li>
+          <li><div class="portrait" aria-hidden="true">L</div><h3>Léa Durand</h3><p>Colour Specialist · Blonding</p><a class="link" href="#book">Book with Léa →</a></li>
+          <li><div class="portrait" aria-hidden="true">J</div><h3>James Okafor</h3><p>Senior Stylist · Texture</p><a class="link" href="#book">Book with James →</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="quotes dark">
+      <div class="marble marble--black" aria-hidden="true"></div>
+      <div class="wrap">
+        <figure class="quote" data-quotes>
+          <blockquote><p>“The first salon where nobody tried to upsell me. I left with exactly the hair I described, and it still looks good eight weeks later.”</p></blockquote>
+          <figcaption>Amira K. · Google review</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Booking -->
+    <section class="book light" id="book">
+      <div class="marble marble--white" aria-hidden="true"></div>
+      <div class="wrap book__inner">
+        <h2>Your chair<br><em>is waiting.</em></h2>
+        <div>
+          <a class="btn btn--dark" href="#" data-booking>Book online</a>
+          <p class="book__alt">or call <a href="tel:+15555550123">(555) 555-0123</a></p>
+          <p class="fine">A $25 deposit holds your time. Free changes up to 24 hours before.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer dark" id="visit">
+    <div class="wrap footer__grid">
+      <div><a class="brand" href="#top">Atelier<span>Noir</span></a></div>
+      <div><h3>Visit</h3><p>214 Mercer Street<br>New York, NY 10012</p></div>
+      <div><h3>Hours</h3><p>Tue–Fri 10–8<br>Sat 9–6 · Sun–Mon closed</p></div>
+      <div><h3>Follow</h3><p><a href="#">Instagram</a><br><a href="#">TikTok</a></p></div>
+    </div>
+    <p class="wrap legal">© 2026 Atelier Noir · <a href="#">Privacy</a> · <a href="#">Booking policy</a></p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
